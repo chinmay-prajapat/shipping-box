@@ -1,0 +1,57 @@
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.logoLink:hover {
+  transform: translateY(-1px);
+}
+
+.logoText {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: rgb(0, 0, 0);
+  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.logoLink:hover .logoText {
+  color: rgb(55, 65, 81);
+}
+
+.logoImage {
+  height: 2rem;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .logoText {
+    color: rgb(237, 237, 237);
+  }
+
+  .logoLink:hover .logoText {
+    color: rgb(229, 231, 235);
+  }
+
+  .logoLink:hover {
+    opacity: 0.9;
+  }
+
+}
+

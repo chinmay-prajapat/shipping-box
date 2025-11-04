@@ -1,0 +1,78 @@
+.colorPickerWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.colorPickerContainer {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.colorInput {
+  width: 60px;
+  height: 44px;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.colorInput:hover {
+  border-color: #9ca3af;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.colorInputError {
+  border-color: #ef4444;
+}
+
+.rgbInput {
+  flex: 1;
+  padding: 0.875rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  background-color: #ffffff;
+  color: #111827;
+}
+
+.rgbInput::placeholder {
+  color: #9ca3af;
+  opacity: 1;
+}
+
+.rgbInput:hover {
+  border-color: #9ca3af;
+}
+
+.rgbInput:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.rgbInputError {
+  border-color: #ef4444;
+}
+
+.rgbInputError:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.error {
+  font-size: 0.875rem;
+  color: #ef4444;
+}
+
