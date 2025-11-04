@@ -19,7 +19,9 @@ const NavigationBar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarContent}>
-        <Logo />
+        <Link href="/">
+          <Logo />
+        </Link>
         <MenuButton isOpen={isMenuOpen} onClick={toggleMenu} />
         <ul
           className={`${styles.navLinks} ${
